@@ -2,7 +2,10 @@
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
 /* Basic */
 body, #skel-layers-wrapper {
-  background: #f3f6fa; }
+  background: #f3f6fa;
+  height: 100%;
+
+}
 
 body.loading * {
   -moz-animation: none !important;
@@ -126,7 +129,7 @@ footer > :last-child {
 footer.major {
   padding-top: 3em; }
 
-/* Form */
+/*/* Form */
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -180,7 +183,7 @@ input[type="email"] {
 
 .formerize-placeholder {
   color: rgba(124, 128, 129, 0.5) !important; }
-
+*/
 /* Image */
 .image {
   border: 0;
@@ -582,38 +585,40 @@ table {
 #banner {
   background-attachment: scroll, scroll, scroll, fixed;
   background-color: #645862;
-  background-image: url("../images/banner.jpg");
-  color: white;
+  background: url("../images/banner.jpg") no-repeat;
+  background-size: 100% 100%;
   cursor: default;
   padding: 6em 0;
   text-align: center;
   min-width: 100%;
   min-height: 100%;
   width: auto;
-  height: auto; }
+  height: auto;
+}
   #banner .inner {
-    -moz-animation: reveal-banner 1s 0.25s ease-in-out;
-    -webkit-animation: reveal-banner 1s 0.25s ease-in-out;
-    -o-animation: reveal-banner 1s 0.25s ease-in-out;
-    -ms-animation: reveal-banner 1s 0.25s ease-in-out;
-    animation: reveal-banner 1s 0.25s ease-in-out;
+    -moz-animation: reveal-banner 1s 0.50s ease-in-out;
+    -webkit-animation: reveal-banner 1s 0.50s ease-in-out;
+    -o-animation: reveal-banner 1s 0.50s ease-in-out;
+    -ms-animation: reveal-banner 1s 0.50s ease-in-out;
+    animation: reveal-banner 1s 0.50s ease-in-out;
     -moz-animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -o-animation-fill-mode: forwards;
     -ms-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-    background: rgba(52, 27, 43, 0.5);
     color: white;
     display: inline-block;
     opacity: 0;
-    padding: 3em;
-    text-align: center; }
+    padding: 5em;
+    text-align: center;
+  }
     #banner .inner header {
       display: inline-block;
       border-bottom: solid 2px;
       border-top: solid 2px;
       margin: 0 0 2em 0;
-      padding: 3px 0 3px 0; }
+      padding: 3px 0 3px 0;
+    }
       #banner .inner header h2 {
         border-bottom: solid 2px;
         border-top: solid 2px;
@@ -623,61 +628,17 @@ table {
         margin: 0;
         padding-left: 0.05em;
         position: relative;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+      }
     #banner .inner p {
       letter-spacing: 0.1em;
       margin: 0;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+    }
       #banner .inner p a {
         color: inherit;
         font-weight: 400;
         text-decoration: none; }
-
-/* Main */
-#main {
-  background-image: url("images/dark-tl.svg"), url("images/dark-tr.svg"), url("images/dark-bl.svg"), url("images/dark-br.svg");
-  background-position: top left, top right, bottom left, bottom right;
-  background-repeat: no-repeat;
-  background-size: 25em;
-  padding: 7em 0; }
-  #main > :last-child {
-    margin-bottom: 0; }
-  #main .sidebar section {
-    border-top: solid 1px rgba(124, 128, 129, 0.2);
-    margin: 3em 0 0 0;
-    padding: 3em 0 0 0; }
-    #main .sidebar section:first-child {
-      border-top: 0;
-      padding-top: 0;
-      margin-top: 0; }
-
-body.index #main {
-  padding-top: 5em; }
-
-/* CTA */
-#cta {
-  background-attachment: scroll, scroll, scroll, fixed;
-  background-color: #645862;
-  background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../images/banner.jpg");
-  background-position: top left, top right, top left, bottom center;
-  background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-  background-size: 25em, 25em, auto, cover;
-  color: white;
-  padding: 5em;
-  text-align: center; }
-  #cta header {
-    margin-bottom: 2em; }
-
-/* Footer */
-#footer {
-  background: #e8eef4;
-  color: #7c8081;
-  padding: 5em 5em 10em 5em;
-  text-align: center; }
-  #footer .copyright {
-    font-size: 0.8em; }
-    #footer .copyright a {
-      color: inherit; }
 
 /* Layers */
 #topButton .toggle {
